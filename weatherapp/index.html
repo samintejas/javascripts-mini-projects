@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/ba3fcf12db.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>Weather</title>
+  </head>
+  <body>
+    <div class="container mov-grad">
+      <header><h1></h1></header>
+      <main>
+        <div class="search">
+          <input type="text" placeholder="Enter City Name" spellcheck="false" />
+          <button class="search-icon">
+            <i class="fa-solid fa-lg fa-magnifying-glass"></i>
+          </button>
+        </div>
+        <div class="result">
+          <span id="city">*</span>
+        </div>
+        <div class="info">
+
+          <div id="w-details">
+            <i class="fa-solid fa-2xl fa-wind"></i>
+            <span id="windSpeed">0  m/s</span>
+          </div>
+
+          <div id="w-details">
+            <i class="fa-solid fa-2xl fa-temperature-empty"></i>
+            <span id="temperature">0  C</span>
+          </div>
+
+          <div id="w-details">
+            <i class="fa-solid fa-2xl fa-droplet"></i>
+            <span id="humidity">0  %</span>
+          </div>
+
+        </div>
+        <div id="errorMessage" class="error"></div>
+      </main>
+    </div>
+  </body>
+
+  <script src="script.js"></script>
+</html>
